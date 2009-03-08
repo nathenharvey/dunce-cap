@@ -10,7 +10,7 @@ namespace :reminders do
     run "echo \"user: #{user}\" >> #{reminder_file}"
     run "echo \"On: #{Time.new.to_s}\" >> #{reminder_file}"
     run "echo \"Message: #{reminder}\" >> #{reminder_file}"
-    run "echo \"\n\" >> #{{reminder_file}"
+    run "echo \"\n\" >> #{reminder_file}"
   end
   
   task :show do
