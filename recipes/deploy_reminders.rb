@@ -8,7 +8,7 @@ namespace :reminders do
   task :add do  
     caputils.ask :reminder, "Reminder: "
     run "echo \"user: #{user}\" >> #{reminder_file}"
-    run "echo \"On: #{Date.now}\" >> #{reminder_file}"
+    run "echo \"On: #{Date.new}\" >> #{reminder_file}"
     run "echo \"Message: #{reminder}\" >> #{reminder_file}"
     run "echo \"\""
   end
