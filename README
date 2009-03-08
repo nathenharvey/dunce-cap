@@ -1,0 +1,9 @@
+Most stuff works out of the box.
+
+If you want logging, add this line to the top of your deploy.rb file:
+
+require 'vendor/plugins/dunce_cap/lib/caplogfix'
+
+and this line at the base or in a task you want to turn logging on for:
+
+log "log/my-logs-filename.log"

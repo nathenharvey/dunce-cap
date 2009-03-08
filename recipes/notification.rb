@@ -1,6 +1,6 @@
 before "deploy:web:disable", "notification:web:disable"
 after "deploy:web:enable", "notification:web:enable"
-before "deploy", "notification:deploy:start"
+before "deploy", "notification:deploy:begin"
 after "deploy", "notification:deploy:complete"
 
 namespace :notification do
@@ -16,13 +16,20 @@ namespace :notification do
   end
 
   namespace :deploy do
-    task :start do
+    task :begin do
       notify("The #{application} #{rails_env} website deploy has begun")  
     end
   
     task :complete do
       notify("The #{application} #{rails_env} website deploy completed successfully")  
     end
+    
+    task :start do
+    end
+    
+    task :stop do
+    end
+    
   end
 end
 
