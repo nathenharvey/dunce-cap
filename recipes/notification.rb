@@ -1,3 +1,7 @@
+# All of this stuff is useful even if you aren't doing anything with growl...
+# Hook in your own stuff to do things like email, tewwt, post to basecamp,
+# etc.
+
 before "deploy:web:disable", "notification:web:disable"
 after "deploy:web:enable", "notification:web:enable"
 before "deploy", "notification:deploy:begin"

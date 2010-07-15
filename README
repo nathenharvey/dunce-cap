@@ -1,6 +1,6 @@
 install this as a plugin using the git url from github.
 
-this adds logging, notifications, and deploy locks to your cap deploys with little to no effort on your part.
+this adds logging, reminbder messages, and deploy locks to your cap deploys with little to no effort on your part.
 
 check out cap -T to see definitions of the tasks it adds.
 
@@ -12,3 +12,6 @@ require 'vendor/plugins/dunce_cap/lib/caplogfix'
 and this line at the base or in a task you want to turn logging on for:
 
 log "log/my-logs-filename.log"
+
+
+Also provides logging of some major events via the growl command line tool if you have it installed.
