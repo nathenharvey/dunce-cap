@@ -6,7 +6,7 @@ namespace :reminders do
   end
   
   task :add do  
-    caputils.ask :reminder, "Reminder: "
+    set :reminder, Capistrano::CLI.ui.ask("Reminder: ")
     run "echo \"user: #{user}\" >> #{reminder_file}"
     run "echo \"On: #{Time.new.to_s}\" >> #{reminder_file}"
     run "echo \"Message: #{reminder}\" >> #{reminder_file}"

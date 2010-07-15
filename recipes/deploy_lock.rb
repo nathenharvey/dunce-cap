@@ -13,7 +13,9 @@ namespace :deploy do
   end
   
   task :lock do
-    caputils.ask :lock_message, "Lock Message: "
+    if "#{lock_message}".empty?
+      set :lock_message, Capistrano::CLI.ui.ask("Lock Message: ")
+    end
     put lock_message, deploy_lockfile, :mode => 0777
   end
 

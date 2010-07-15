@@ -1,4 +1,9 @@
-Most stuff works out of the box.
+install this as a plugin using the git url from github.
+
+this adds logging, notifications, and deploy locks to your cap deploys with little to no effort on your part.
+
+check out cap -T to see definitions of the tasks it adds.
+
 
 If you want logging, add this line to the top of your deploy.rb file:
 
