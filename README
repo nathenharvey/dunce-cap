@@ -1,6 +1,6 @@
 Dunce-Cap was born out of some very frustrating late nights working on a death march.
 
-In short, a small group of people were rapidly coding and deploying things, and would occasionally step on each other in interesting ways.  I quickly thre something together to lock the deploy while it was running, lock the deploy if you knew something was unstable, leave reminders that get shown on a deploy, and add loccing to cap so you can have some forensic evidence when things go south.
+In short, a small group of people were rapidly coding and deploying things, and would occasionally step on each other in interesting ways.  I quickly threw something together to lock the deploy while it was running, lock the deploy if you knew something was unstable, leave reminders that get shown on a deploy, and add logging to cap so you can have some forensic evidence when things go south.
 
 This was many years ago, when we were working on subversion, and before git solved some of these harried coordination issues for us.
 
@@ -13,7 +13,7 @@ install this as a plugin using the git url from github.
 
 I'll convert it to a gem sometime in the future - right now, plugins are easily loaded into cap tasks, so this works.
 
-Dunce-cap adds logging, reminbder messages, and deploy locks to your cap deploys with little to no effort on your part.
+Dunce-cap adds logging, reminder messages, and deploy locks to your cap deploys with little to no effort on your part.
 
 check out cap -T to see definitions of the tasks it adds.
 
